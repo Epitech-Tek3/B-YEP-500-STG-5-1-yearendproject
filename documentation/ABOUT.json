@@ -1,0 +1,66 @@
+{
+  " client ": {
+  " host ": "8080"
+  } ,
+  " server ": {
+  " current_time ": 1531680780 ,
+  " services ": [{
+  " name ": " Spotify " ,
+  " reactions ": [{
+  " name ": " add to track list " ,
+  " description ": " The user add music to her tracklist Spotify ",
+  " Follow " : "the user follow another playlist"
+  }]
+
+  } , {
+  " name ": " Twitch " ,
+  " actions ": [{
+  " Live ": " Notification live twitch " ,
+  " description ": " The user received a notification for a live ",
+  " Follow ": "Follow Twitch",
+  " description-follow " : "The user Follow another account"
+  }]
+  }, {
+  " name ": " Github " ,
+  " actions ": [{
+  " name ": " commit github" ,
+  " description ": " the user push into her branch "
+  }]
+  }, {
+  " name ": " Google " ,
+  " actions ": [{
+  " name ": " like music on youtube " ,
+  " description ": " The user like a music or a video on youtube ",
+  " dislike ": " dislike music on youtube " ,
+  " dislike-description ": " The user dislike a music or a video on youtube "
+  }] ,
+  " reactions ": [{
+  " name ": " Play random youtube vidéo " ,
+  " description ": " The user play a random youtube video after a action "
+  }]
+
+
+  } , {
+  " name ": " Microsoft " ,
+  " reactions ": [{
+  " name ": " add évent to Microsoft calendar " ,
+  " description ": " The user add an event to her microsoft calendar "
+  } , {
+  " name ": " module_subscribe " ,
+  " description ": " The user signs up for a unit "
+  }]
+  }, {
+    " name ": " Discord " ,
+    " actions ": [{
+    " name ": "Discord reaction " ,
+    " description ": " The user react to a content on a discord discution "
+    }] ,
+    " reactions ": [{
+    " name ": " add to track list Discord " ,
+    " description ": " The user add a music to track list bot ",
+    " reaction-message" : "reaction content",
+    " description-reaction" : " the user react to a discord content like a message or image"
+    }]
+    }]
+}
+}

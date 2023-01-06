@@ -1,0 +1,49 @@
+version: '3.7'
+
+volumes:
+  my_dbdata:
+  web_data:
+
+services:
+  # frontend_server Server
+  frontend_server:
+    container_name: frontend_server
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    tty: true
+    volumes:
+      - web_data:/app
+    networks:
+      - default
+    ports:
+      - 8081:8081
+
+  # backend_server
+  backend_server:
+    container_name: backend_server
+    build:
+      context: ./
+      dockerfile: Dockerfile.server
+    tty: true
+    volumes:
+      - web_data:/app
+    ports:
+      - 8080:8080
+    depends_on:
+      - frontend_server
+    networks:
+      - default
+
+# Init mobile
+  mobile:
+    container_name: mobile
+    build:
+      context: ./apps/mobile
+      dockerfile: Dockerfile
+    volumes:
+      - web_data:/app_mobile
+    networks:
+      - default
+    depends_on:
+      - frontend_server

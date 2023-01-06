@@ -1,0 +1,80 @@
+{
+  " client ": {
+  " host ": "8080"
+  } ,
+  " server ": {
+  " current_time ": 1531680780 ,
+  " services ": [{
+  " name ": " Spotify " ,
+  " actions ": [{
+    " name ": " add to playlist Spotify " ,
+    " description ": " The user add a music to a spotify playlist "
+    }],
+  " reactions ": [{
+  " name ": " skip song Spotify ",
+  " description ": " spotify change current song for the next "
+},{
+  " name " : "Follow playlist on spotify",
+  "description" : "the user follow another playlist"
+},{
+  " name " : "delete track spotify",
+  " description " : "the user delete a track to her spotify track"
+}]
+
+  } , {
+  " name ": " Twitch " ,
+  " actions ": [{
+  " Live ": " Notification live twitch " ,
+  " description ": " The user received a notification for a live "
+  }, {
+  " Follow ": "Follow Twitch",
+  " description-follow " : "The user subscribe another twitch account"
+  }]
+  }, {
+  " name ": " Github " ,
+  " actions ": [{
+  " name ": " commit github" ,
+  " description ": " the user push into her branch "
+  }]
+  }, {
+  " name ": " Google " ,
+  " actions ": [{
+  " name ": " like music on youtube " ,
+  " description ": " The user like a music or a video on youtube "
+  }, {
+  " name " : "youtube subscribtion",
+  " description " : "the user subscribe to an account"
+  }] ,
+  " reactions ": [{
+  " name ": " Play random youtube vidéo " ,
+  " description ": " The user play a random youtube video after a action "
+  }]
+
+  } , {
+  " name ": " Microsoft " ,
+  " reactions ": [{
+  " name ": " add évent to Microsoft calendar " ,
+  " description ": " The user add an event to her microsoft calendar "
+  } , {
+  " name ": " module_subscribe " ,
+  " description ": " The user signs up for a unit "
+  }]
+  }, {
+    " name ": " Discord " ,
+    " actions ": [{
+    " name ": "Discord reaction " ,
+    " description ": " The user react to a content on a discord discution "
+    }] ,
+    " reactions ": [{
+    " name ": " send message discord " ,
+    " description ": " the bot send a message "
+    }]
+  },{
+    " name ": " Weather " ,
+    " actions ": [{
+    " name ": "Weather " ,
+    " description ": " The user display the current weather "
+    }]
+  }]
+}
+}

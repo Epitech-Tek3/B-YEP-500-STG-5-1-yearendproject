@@ -1,0 +1,1 @@
+{"version":3,"file":"discord.config.js","sourceRoot":"","sources":["../../src/config/discord.config.ts"],"names":[],"mappings":";AAAA,MAAM,CAAC,OAAO,GAAG;IACf,MAAM,EAAE,GAAG;IACX,EAAE,EAAE,IAAI;IACR,iBAAiB,EAAE,KAAK;IACxB,MAAM,EAAE,kBAAkB;IAC1B,aAAa,EAAE,qBAAqB;IACpC,YAAY,EAAE,kCAAkC;IAChD,KAAK,EAAE,6DAA6D,CAAC,qCAAqC;CAC3G,CAAC"}

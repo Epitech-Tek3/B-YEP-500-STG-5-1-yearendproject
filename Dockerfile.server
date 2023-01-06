@@ -1,0 +1,7 @@
+FROM node:lts
+
+WORKDIR /app
+
+EXPOSE 8080:8080
+
+CMD ["yarn", "backend"]

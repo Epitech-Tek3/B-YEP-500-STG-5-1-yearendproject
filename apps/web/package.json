@@ -1,0 +1,28 @@
+{
+  "name": "@area/web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build && next export && mv out/404/index.html out/404.html && rm -rf out/404",
+    "dev": "cross-env DEBUG=app:* next --port 8081",
+    "compile": "tsc -p .",
+    "start": "NODE_ENV=production node server.js",
+    "export": "next export",
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.1",
+    "@types/react-circular-progressbar": "^1.1.0",
+    "client-passport": "^2.1.0",
+    "config": "*"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "dexie": "^3.2.1",
+    "next-compose-plugins": "^2.2.1"
+  }
+}
